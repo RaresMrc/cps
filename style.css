@@ -1,0 +1,51 @@
+body {
+    display: flex;
+    justify-content: center;
+    min-height: 100%;
+    min-width: 100%;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: calc(100vh - 100px);
+    height: calc(100vh - 100px);
+    row-gap: 25px;
+}
+
+#timer {
+    text-align: center;
+    color: mediumturquoise;
+    font-size: 30px;
+    font-family: monospace;
+    font-weight: lighter;
+}
+
+#clickButton {
+    background-color: lightslategray;
+    color: lightcyan;
+    font-size: 5vh;
+    border-radius: 50%;
+    border-width: 0px;
+    width: 50%;
+    height: 50%;
+    border-width: 2px;
+    border-style: solid;
+    border-color: yellow;
+    box-shadow: 0px 0px 50px 10px #B73C5F;
+    text-align: center;
+}
+
+#clickButton :hover {
+    background-color: black;
+}
+
+#clicks {
+    text-align: center;
+    color: lightcoral;
+    font-size: 30px;
+    font-family: monospace;
+    font-weight: lighter;   
+}
