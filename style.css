@@ -1,5 +1,6 @@
 body {
     display: flex;
+    background: radial-gradient(circle, #e66465, #9198e5);
     justify-content: center;
     min-height: 100%;
     min-width: 100%;
@@ -17,14 +18,19 @@ body {
 
 #timer {
     text-align: center;
-    color: mediumturquoise;
-    font-size: 30px;
+    
+    background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+    linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
+    linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 5vh;
     font-family: monospace;
     font-weight: lighter;
 }
 
 #clickButton {
-    background-color: lightslategray;
+    background-color: rgb(80% 60% 100%);
     color: lightcyan;
     font-size: 5vh;
     border-radius: 50%;
@@ -33,19 +39,28 @@ body {
     height: 50%;
     border-width: 2px;
     border-style: solid;
-    border-color: yellow;
-    box-shadow: 0px 0px 50px 10px #B73C5F;
+    border-color: #843745;
+    box-shadow: 0px 0px 50px 10px #b10d3c;
     text-align: center;
 }
 
-#clickButton :hover {
-    background-color: black;
+#clickButton:hover {
+    background-color: paleturquoise;
+    color: black;
+    filter: drop-shadow(5px 5px 10px red) contrast(150%);
+    font-size: 6vh;
+    width: 55%;
+    height: 55%;
+    cursor: crosshair;
 }
 
 #clicks {
     text-align: center;
     color: lightcoral;
-    font-size: 30px;
+    background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 5vh;
     font-family: monospace;
     font-weight: lighter;   
 }
